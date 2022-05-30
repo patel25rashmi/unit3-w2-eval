@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+  </head>
+
+  <body>
+    <div id="order-form">
+      <!--Add your form html element here-->
+      <!--In form, give #name,#number and #address as HTML id's to relevant input elements -->
+      <!-- confirm button with id "confirm" -->
+
+      <form action="">
+
+        <input type="text" id="" placeholder="Enter Name">
+        <input type="number" id="" placeholder="Enter mobile No.">
+        <input type="text" id="" placeholder="Enter address">
+        <button id="confirm" onclick="myFunc()">Confirm</button>
+      </form>
+    </div>
+  </body> 
+</html>
+<script>
+  let timeout;
+  let timeout2;
+  let timeout3;
+  let timeout4;
+  let timeout5;
+function myFunc(){
+  timeout = setTimeout(alertFunc, 0);
+  timeout2 = setTimeout(alertFunc2, 3000);
+  timeout3 = setTimeout(alertFunc3, 8000);
+  timeout4 = setTimeout(alertFunc4, 10000);
+  timeout5 = setTimeout(alertFunc5, 12000);
+}
+
+function alertFunc(){
+  alert("Your order is accepted")
+}
+
+function alertFunc2(){
+  if(timeout)
+  {
+    clearTimeout(timeout)
+  }
+  alert("Your order is being Prepared")
+}
+
+function alertFunc3(){
+  alert("Your order is being packed")
+}
+
+function alertFunc4(){
+  alert("Your order is out for delivery")
+}
+
+function alertFunc5(){
+  alert("Order delivered")
+}
+</script>
